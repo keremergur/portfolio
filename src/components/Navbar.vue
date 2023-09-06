@@ -4,11 +4,11 @@
 
 <template>
   <nav>
-	<li>Intro</li>
-	<li>About</li>
-	<li>Skills</li>
-	<li>Interests</li>
-	<li>Projects</li>
+	<li><a href="">Intro</a></li>
+	<li><a href="#about">About</a></li>
+	<li><a href="#skills">Skills</a></li>
+	<li><a>Interests</a></li>
+	<li><a>Projects</a></li>
   </nav>
 </template>
 
@@ -20,15 +20,20 @@ nav {
 	margin: 0 auto;
 	position: sticky;
 	top: 2rem;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 1);
 }
 nav li {
 	color: black;
 	display: inline-block;
 	list-style: none;
-	padding: 0.5rem 1rem;;
-	width: 5rem;
 }
 nav li:hover {
 	background-color: cyan;
+}
+a {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	width: 5rem;
+	
 }
 </style>

@@ -61,9 +61,12 @@ h4 {
 }
 #about {
 	width: 80%;
-	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
+}
+#about ul {
+	padding: 0;
+	width: 10rem;
 }
 li {
 	display: block;
@@ -73,8 +76,11 @@ li {
 	display: flex;
 	justify-content: space-around;
 	width: 80%;
-	margin: 0 auto;
 }
+section {
+	margin: 10rem auto;
+}
+
 #interests {
 	height: 300rem;
 }
