@@ -77,4 +77,7 @@ li {
 	width: 80%;
 	margin: 0 auto;
 }
+#interests {
+	height: 300rem;
+}
 </style>

@@ -18,6 +18,8 @@ nav {
 	border-radius: 10px;
 	width: fit-content;
 	margin: 0 auto;
+	position: sticky;
+	top: 2rem;
 }
 nav li {
 	color: black;
