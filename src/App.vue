@@ -1,5 +1,5 @@
 <script setup>
-
+import Navbar from './components/Navbar.vue';
 </script>
 
 <template>
@@ -10,23 +10,34 @@
       <h1>Kerem Ergür</h1>
       <h4>a student developer at LMU Munich.</h4>
     </div>
-    <div class="photo">
+    <div>
       <p>Image</p>
     </div>
   </header>
-  <nav>
-  	<li>Intro</li>
-  	<li>About</li>
-  	<li>Skills</li>
-  	<li>Interests</li>
-  	<li>Projects</li>
-  </nav>
+  <Navbar />
   <main>
-  	<p>Brief introduction</p>
-  	<aside>Links</aside>
-  	<div>Languages and tools</div>
-  	<div>Areas of interest with images</div>
-  	<div>Projects</div>
+  	<section id="about">
+  	  <p>Brief introduction</p>
+  	  <ul>
+  	  	<li><a>LinkedIn</a></li>
+  	  	<li><a>GitHub</a></li>
+  	  </ul>
+  	</section>
+  	<section id="skills">
+  	  <div>
+  		<h2>Languages</h2>
+  	  </div>
+  	  <div>
+  	  	<h2>Tools</h2>
+  	  </div>
+  	  <!-- component (2) -->
+  	</section>
+  	<section id="interests">
+  	<!-- component many -->
+  	</section>
+  	<section id="projects">
+  	<!-- component many -->
+  	</section>
   </main>
 </div>
 </template>
@@ -38,7 +49,7 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	width: 65%;
-	margin: 0 auto;
+	margin: 10rem auto;
 }
 h1 {
 	margin: 0;
@@ -47,19 +58,23 @@ h4 {
 	margin: 0;
 	padding-top: 1.2rem;
 }
-nav {
-	background-color: darkblue;
-	border-radius: 10px;
-	width: fit-content;
-	margin: 0 auto;
-}
-nav li {
-	display: inline-block;
-	list-style: none;
-	padding: 0.5rem 1rem;;
-	width: 5rem;
-}
 .greet {
 	text-align: left;
+}
+#about {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+li {
+	display: block;
+	text-align: left;
+}
+#skills {
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	margin: 0 auto;
 }
 </style>
