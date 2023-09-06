@@ -1,5 +1,8 @@
 <script setup>
 import Navbar from './components/Navbar.vue';
+import LogoSet from './components/LogoSet.vue';
+
+const links = ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"];
 </script>
 
 <template>
@@ -24,13 +27,8 @@ import Navbar from './components/Navbar.vue';
   	  </ul>
   	</section>
   	<section id="skills">
-  	  <div>
-  		<h2>Languages</h2>
-  	  </div>
-  	  <div>
-  	  	<h2>Tools</h2>
-  	  </div>
-  	  <!-- component (2) -->
+  	  <LogoSet title="Languages" :logos="links" />
+  	  <LogoSet title="Tools" :logos="[]" />
   	</section>
   	<section id="interests">
   	<!-- component many -->
