@@ -3,6 +3,7 @@
 </script>
 
 <template>
+<div>
   <header>
     <div class="greet">
       <h4>Hey there, I'm</h4>
@@ -14,8 +15,8 @@
     </div>
   </header>
   <nav>
-  	<li>Top</li>
-  	<li>Introduction</li>
+  	<li>Intro</li>
+  	<li>About</li>
   	<li>Skills</li>
   	<li>Interests</li>
   	<li>Projects</li>
@@ -27,17 +28,28 @@
   	<div>Areas of interest with images</div>
   	<div>Projects</div>
   </main>
+</div>
 </template>
 
 <style scoped>
 header {
+	height: 20rem;
 	display: flex;
-	justify-content: space-between;;
-	padding: 0 15rem;
+	align-items: center;
+	justify-content: space-between;
+	width: 65%;
+	margin: 0 auto;
+}
+h1 {
+	margin: 0;
+}
+h4 {
+	margin: 0;
+	padding-top: 1.2rem;
 }
 nav {
 	background-color: darkblue;
-	border-radius: 7px;
+	border-radius: 10px;
 	width: fit-content;
 	margin: 0 auto;
 }
