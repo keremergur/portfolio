@@ -20,10 +20,12 @@ defineProps({
 ul {
 	display: flex;
 	justify-content: center;
-	width: 15rem;
+	flex-wrap: wrap;
+	width: 23rem;
 	padding: 0;
 }
 li {
 	list-style: none;
+	margin: 0.5rem;
 }
 </style>

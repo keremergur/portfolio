@@ -3,7 +3,26 @@ import Navbar from './components/Navbar.vue';
 import LogoSet from './components/LogoSet.vue';
 import Interest from './components/Interest.vue';
 
-const links = ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"];
+const links = ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/haskell/haskell-original.svg",
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"];
+const tools = [
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg",
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original.svg",
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg",
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+]
 </script>
 
 <template>
@@ -37,7 +56,7 @@ const links = ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-ori
   	</section>
   	<section id="skills">
   	  <LogoSet title="Languages" :logos="links" />
-  	  <LogoSet title="Tools" :logos="[]" />
+  	  <LogoSet title="Tools" :logos="tools" />
   	</section>
   	<section id="interests">
   	  <p>Some of my current interests are as follows</p>
