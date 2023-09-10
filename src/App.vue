@@ -94,7 +94,7 @@ h4 {
 	text-align: left;
 }
 main section {
-	scroll-margin-block-start: 20rem;
+	scroll-margin-block-start: 14rem;
 }
 #about {
 	width: 80%;

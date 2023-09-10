@@ -4,11 +4,11 @@
 
 <template>
   <nav>
-	<li><a href="">Intro</a></li>
+	<li><a href="#">Intro</a></li>
 	<li><a href="#about">About</a></li>
 	<li><a href="#skills">Skills</a></li>
-	<li><a>Interests</a></li>
-	<li><a>Projects</a></li>
+	<li><a href="#interests">Interests</a></li>
+	<li><a href="#">Projects</a></li>
   </nav>
 </template>
 
