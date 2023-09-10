@@ -1,13 +1,14 @@
 <script setup>
 import Navbar from './components/Navbar.vue';
 import LogoSet from './components/LogoSet.vue';
+import Interest from './components/Interest.vue';
 
 const links = ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"];
 </script>
 
 <template>
 <div>
-  <header>
+  <header id="intro">
     <div class="greet">
       <h4>Hey there, I'm</h4>
       <h1>Kerem Ergür</h1>
@@ -22,8 +23,16 @@ const links = ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-ori
   	<section id="about">
   	  <p>Brief introduction</p>
   	  <ul>
-  	  	<li><a>LinkedIn</a></li>
-  	  	<li><a>GitHub</a></li>
+  	    <li>
+    	  <img />
+     	  <a href="https://github.com/keremergur/"
+     	  	target="_blank">GitHub</a>
+     	</li>
+  	  	<li>
+  	  	  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
+  	  	  <a href="https://linkedin.com/in/keremergur/"
+  	  	  	target="_blank">LinkedIn</a>
+  	  	</li>
   	  </ul>
   	</section>
   	<section id="skills">
@@ -31,7 +40,13 @@ const links = ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-ori
   	  <LogoSet title="Tools" :logos="[]" />
   	</section>
   	<section id="interests">
-  	<!-- component many -->
+  	  <p>Some of my current interests are as follows</p>
+  	  	<div id="imgblocks">
+  	  	  <Interest title="Web Development" info="Front-end, REST, CSR/SSR" />
+  	 	  <Interest title="Database Management" info="SQL, Normalization" />
+  	  	  <Interest title="Computer Networks" info="TCP/IP, DNS, VPN" />
+  	  	  <Interest title="Cybersecurity" info="Cryptography, Ethical Hacking" />
+  	  	</div>
   	</section>
   	<section id="projects">
   	<!-- component many -->
@@ -59,6 +74,9 @@ h4 {
 .greet {
 	text-align: left;
 }
+main section {
+	scroll-margin-block-start: 20rem;
+}
 #about {
 	width: 80%;
 	display: flex;
@@ -67,6 +85,10 @@ h4 {
 #about ul {
 	padding: 0;
 	width: 10rem;
+}
+#about ul li img {
+	height: 1rem;
+	width: 1rem;
 }
 li {
 	display: block;
@@ -80,8 +102,9 @@ li {
 section {
 	margin: 10rem auto;
 }
-
-#interests {
-	height: 300rem;
+#imgblocks {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
 }
 </style>
