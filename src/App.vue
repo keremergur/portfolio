@@ -22,30 +22,34 @@ const tools = [
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
-]
+];
+const navstyle = {
+	position: "sticky",
+	top: "3rem"
+};
+const navshift = {
+	position: 'relative',
+	top: '-1rem'
+};
 </script>
 
 <template>
-<div>
-  <teleport to="body">
-  	<div id="bgdiv">
-      <img id="bgimg" src="./prism.svg" />
-    </div>
-    <div id="bgsite">
-      <img id="bgsimg" src="./prism.svg" />
-    </div>
-  </teleport>
-  <header id="intro">
-    <div class="greet">
-      <h4>Hey there, I'm</h4>
-      <h1>Kerem Ergür</h1>
-      <h4>a student developer at LMU Munich.</h4>
-    </div>
-    <div>
-      <img id="ppic" src="./ppic.jpg" alt="[Picture]" />
-    </div>
+<div id="container">
+  <header>
+  	<div id="intro">
+	    <div class="greet">
+	      <h4>Hey there, I'm</h4>
+	      <h1>Kerem Ergür</h1>
+	      <h4>a student developer at LMU Munich.</h4>
+	    </div>
+	    <div>
+	      <img id="ppic" src="./ppic.jpg" alt="[Picture]" />
+	    </div>
+	</div>
   </header>
-  <Navbar />
+  <div :style="navstyle">
+  	<Navbar :style="navshift" />
+  </div>
   <main>
   	<section id="about">
   	  <p>Brief introduction</p>
@@ -83,35 +87,13 @@ const tools = [
 </template>
 
 <style scoped>
-#bgdiv {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 43.3rem;
-	filter: opacity(50%);
-	z-index: -1;
-}
-#bgimg {
-	position: sticky;
-	top: -20rem;
-	width: 100%;
-	height: 100%;
-	filter: opacity(50%);
-	/* background by SVGBackgrounds.com */
-}
-#bgsite {
-	position: absolute;
-	height: 100%;
-	top: 43.3rem;
-}
-#bgsimg {
-	position: static;
-	width: 100%;
-	height: 100%;
-	filter: opacity(50%);
-	/* background by SVGBackgrounds.com */
+#container {
+	display: grid;
 }
 header {
+	background-image: url("./prism.svg");
+}
+#intro {
 	height: 20rem;
 	display: flex;
 	align-items: center;

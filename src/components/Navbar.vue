@@ -18,8 +18,7 @@ nav {
 	border-radius: 10px;
 	width: fit-content;
 	margin: 0 auto;
-	position: sticky;
-	top: 2rem;
+	
 	box-shadow: 0 3px 10px rgb(0 0 0 / 1);
 }
 nav li {
