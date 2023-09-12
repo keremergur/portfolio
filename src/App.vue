@@ -2,7 +2,7 @@
 import Navbar from './components/Navbar.vue';
 import LogoSet from './components/LogoSet.vue';
 import Interest from './components/Interest.vue';
-
+const introduction = "Hello there";
 const links = ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
@@ -55,7 +55,7 @@ const navshift = {
   	  <Navbar :style="navshift" />
   	</div>
   	<section id="about">
-  	  <p>Brief introduction</p>
+  	  <p>{{ introduction }}</p>
   	  <ul>
   	    <li>
     	  <img />
@@ -114,7 +114,7 @@ header {
 	left: 0;right: 0;
 	width: 100%;height: 100%;
 	object-fit: cover;
-	filter: opacity(50%);
+	filter: opacity(30%);
 	z-index: -3;
 }
 #intro {

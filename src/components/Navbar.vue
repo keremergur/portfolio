@@ -25,9 +25,17 @@ nav li {
 	color: black;
 	display: inline-block;
 	list-style: none;
+	border: 1px solid transparent;
+	transition: border-color 0.25s;
 }
 nav li:hover {
-	background-color: cyan;
+	border-color: #646cff;
+}
+nav li:first-child:hover {
+	border-radius: 10px 0 0 10px;
+}
+nav li:last-child:hover {
+	border-radius: 0 10px 10px 0;
 }
 a {
 	display: inline-block;
