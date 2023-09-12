@@ -25,7 +25,8 @@ const tools = [
 ];
 const navstyle = {
 	position: "sticky",
-	top: "3rem"
+	top: "3rem",
+	'z-index': 2
 };
 const navshift = {
 	position: 'relative',
@@ -49,6 +50,7 @@ const navshift = {
 	</div>
   </header>
   <main>
+  	<img id="bgmain" src="./liquid.svg" />
   	<div :style="navstyle">
   	  <Navbar :style="navshift" />
   	</div>
@@ -96,6 +98,9 @@ header {
 	position: sticky;
 	top: -37rem;
 	box-shadow: 0 3px 10px rgb(0 0 0 / 1);
+	background-color: #242424;
+	opacity: 100%;
+	z-index: 1;
 }
 #bghead {
 	position: absolute;
@@ -103,6 +108,14 @@ header {
 	width: 100%;height: 100%;
 	filter: opacity(50%);
 	z-index: -1;
+}
+#bgmain {
+	position: absolute;
+	left: 0;right: 0;
+	width: 100%;height: 100%;
+	object-fit: cover;
+	filter: opacity(50%);
+	z-index: -3;
 }
 #intro {
 	height: 20rem;
@@ -127,7 +140,7 @@ h4 {
 	border-radius: 30px;
 }
 main {
-	background-image: url("./liquid.svg") #242424;
+	position: relative;
 }
 main section {
 	scroll-margin-block-start: 14rem;
@@ -156,6 +169,7 @@ li {
 }
 section {
 	margin: 10rem auto;
+	z-index: -2;
 }
 #imgblocks {
 	display: flex;
