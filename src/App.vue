@@ -36,6 +36,7 @@ const navshift = {
 <template>
 <div id="container">
   <header>
+  	<img id="bghead" src="./prism.svg" />
   	<div id="intro">
 	    <div class="greet">
 	      <h4>Hey there, I'm</h4>
@@ -47,10 +48,10 @@ const navshift = {
 	    </div>
 	</div>
   </header>
-  <div :style="navstyle">
-  	<Navbar :style="navshift" />
-  </div>
   <main>
+  	<div :style="navstyle">
+  	  <Navbar :style="navshift" />
+  	</div>
   	<section id="about">
   	  <p>Brief introduction</p>
   	  <ul>
@@ -91,7 +92,17 @@ const navshift = {
 	display: grid;
 }
 header {
-	background-image: url("./prism.svg");
+	/*background-image: url("./prism.svg");*/
+	position: sticky;
+	top: -37rem;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 1);
+}
+#bghead {
+	position: absolute;
+	top: 0;left: 0;right: 0;bottom: 0;
+	width: 100%;height: 100%;
+	filter: opacity(50%);
+	z-index: -1;
 }
 #intro {
 	height: 20rem;
@@ -114,6 +125,9 @@ h4 {
 #ppic {
 	height: 22rem;
 	border-radius: 30px;
+}
+main {
+	background-image: url("./liquid.svg") #242424;
 }
 main section {
 	scroll-margin-block-start: 14rem;
