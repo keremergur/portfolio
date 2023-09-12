@@ -27,6 +27,14 @@ const tools = [
 
 <template>
 <div>
+  <teleport to="body">
+  	<div id="bgdiv">
+      <img id="bgimg" src="./prism.svg" />
+    </div>
+    <div id="bgsite">
+      <img id="bgsimg" src="./prism.svg" />
+    </div>
+  </teleport>
   <header id="intro">
     <div class="greet">
       <h4>Hey there, I'm</h4>
@@ -34,7 +42,7 @@ const tools = [
       <h4>a student developer at LMU Munich.</h4>
     </div>
     <div>
-      <p>Image</p>
+      <img id="ppic" src="./ppic.jpg" alt="[Picture]" />
     </div>
   </header>
   <Navbar />
@@ -75,6 +83,34 @@ const tools = [
 </template>
 
 <style scoped>
+#bgdiv {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 43.3rem;
+	filter: opacity(50%);
+	z-index: -1;
+}
+#bgimg {
+	position: sticky;
+	top: -20rem;
+	width: 100%;
+	height: 100%;
+	filter: opacity(50%);
+	/* background by SVGBackgrounds.com */
+}
+#bgsite {
+	position: absolute;
+	height: 100%;
+	top: 43.3rem;
+}
+#bgsimg {
+	position: static;
+	width: 100%;
+	height: 100%;
+	filter: opacity(50%);
+	/* background by SVGBackgrounds.com */
+}
 header {
 	height: 20rem;
 	display: flex;
@@ -92,6 +128,10 @@ h4 {
 }
 .greet {
 	text-align: left;
+}
+#ppic {
+	height: 22rem;
+	border-radius: 30px;
 }
 main section {
 	scroll-margin-block-start: 14rem;
