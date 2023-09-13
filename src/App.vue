@@ -2,7 +2,7 @@
 import Navbar from './components/Navbar.vue';
 import LogoSet from './components/LogoSet.vue';
 import Interest from './components/Interest.vue';
-const introduction = "Hello there";
+const introduction = "Munich based student developer at Ludwig-Maximilians-University. Recently, I've mostly used JavaScript, Yarn and Vue.js, always accompanied by Git and sometimes Firebase. You can find my individual skills and interests below.";
 const links = ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
@@ -37,7 +37,7 @@ const navshift = {
 <template>
 <div id="container">
   <header>
-  	<img id="bghead" src="./prism.svg" />
+  	<img id="bghead" src="./bk-prism.svg" />
   	<div id="intro">
 	    <div class="greet">
 	      <h4>Hey there, I'm</h4>
@@ -74,7 +74,7 @@ const navshift = {
   	  <LogoSet title="Tools" :logos="tools" />
   	</section>
   	<section id="interests">
-  	  <p>Some of my current interests are as follows</p>
+  	  <h3>Some of my current interests are as follows</h3>
   	  	<div id="imgblocks">
   	  	  <Interest title="Web Development" info="Front-end, REST, CSR/SSR" />
   	 	  <Interest title="Database Management" info="SQL, Normalization" />
@@ -98,7 +98,7 @@ header {
 	position: sticky;
 	top: -37rem;
 	box-shadow: 0 3px 10px rgb(0 0 0 / 1);
-	background-color: #242424;
+	background-color: #111;
 	opacity: 100%;
 	z-index: 1;
 }
@@ -148,11 +148,19 @@ main section {
 #about {
 	width: 80%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+}
+#about p {
+	width: 40rem;
+	text-align: left;
+}
+p {
+	font-size: 1.2em;
 }
 #about ul {
 	padding: 0;
 	width: 10rem;
+	font-size: 1.4em;
 }
 #about ul li img {
 	height: 1rem;
@@ -167,8 +175,11 @@ li {
 	justify-content: space-around;
 	width: 80%;
 }
+#interests {
+	width: 80%;
+}
 section {
-	margin: 10rem auto;
+	margin: 7rem auto;
 	z-index: -2;
 }
 #imgblocks {

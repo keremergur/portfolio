@@ -17,5 +17,6 @@ defineProps({
 <style scoped>
 div {
 	width: 20rem;
+	margin: 2rem;
 }
 </style>
