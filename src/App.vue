@@ -177,6 +177,7 @@ li {
 }
 #interests {
 	width: 80%;
+	max-width: 80rem;
 }
 section {
 	margin: 7rem auto;
