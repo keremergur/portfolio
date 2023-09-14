@@ -26,10 +26,11 @@ nav li {
 	display: inline-block;
 	list-style: none;
 	border: 1px solid transparent;
-	transition: border-color 0.25s;
+	transition: border-color 0.25s, box-shadow 0.25s;
 }
 nav li:hover {
 	border-color: #646cff;
+	box-shadow: inset 0 0 5px rgb(36 36 36 / 0.5);
 }
 nav li:first-child:hover {
 	border-radius: 10px 0 0 10px;
