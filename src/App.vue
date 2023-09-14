@@ -76,11 +76,11 @@ const navshift = {
   	<section id="interests">
   	  <h3>Some of my current interests are as follows</h3>
   	  	<div id="imgblocks">
-  	  	  <Interest title="Web Development" info="Front-end, REST, CSR/SSR" />
-  	  	  <Interest title="Software Architecture" info="SOLID, Cohesion" />
-  	 	  <Interest title="Database Management" info="SQL, Normalization" />
-  	  	  <Interest title="Computer Networks" info="TCP/IP, DNS, VPN" />
-  	  	  <Interest title="Cybersecurity" info="Cryptography, Ethical Hacking" />
+  	  	  <Interest imgsrc="web.svg" title="Web Development" info="Front-end, REST, CSR/SSR" />
+  	  	  <Interest imgsrc="arch.svg" title="Software Architecture" info="SOLID, Cohesion" />
+  	 	  <Interest imgsrc="web.svg" title="Database Management" info="SQL, Normalization" />
+  	  	  <Interest imgsrc="wire.svg" title="Computer Networks" info="TCP/IP, DNS, VPN" />
+  	  	  <Interest imgsrc="touch.svg" title="Cybersecurity" info="Cryptography, Ethical Hacking" />
   	  	</div>
   	</section>
   	<section id="projects">

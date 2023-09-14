@@ -19,4 +19,12 @@ div {
 	width: 20rem;
 	margin: 2rem;
 }
+img {
+	height: 10rem;
+	width: 10rem;
+	filter: opacity(75%);
+}
+h2 {
+	margin: 0 auto;
+}
 </style>
