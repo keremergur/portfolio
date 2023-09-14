@@ -22,10 +22,13 @@ ul {
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 23rem;
-	padding: 0;
+	padding: 0;;
 }
 li {
 	list-style: none;
 	margin: 0.5rem;
+}
+img {
+	filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 </style>
