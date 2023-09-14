@@ -3,7 +3,7 @@ import Navbar from './components/Navbar.vue';
 import LogoSet from './components/LogoSet.vue';
 import Interest from './components/Interest.vue';
 const introduction = "Munich based student developer at Ludwig-Maximilians-University. Recently, I've mostly used JavaScript, Yarn and Vue.js, always accompanied by Git and sometimes Firebase. You can find my individual skills and interests below.";
-const links = ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+const langs = ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/haskell/haskell-original.svg",
@@ -11,7 +11,7 @@ const links = ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-ori
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"];
 const tools = [
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+	"github.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original.svg",
@@ -58,25 +58,26 @@ const navshift = {
   	  <p>{{ introduction }}</p>
   	  <ul>
   	    <li>
-    	  <img />
+    	  <img src="github.svg" />
      	  <a href="https://github.com/keremergur/"
-     	  	target="_blank">GitHub</a>
+     	  	target="_blank" style="color: white">GitHub</a>
      	</li>
   	  	<li>
   	  	  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
   	  	  <a href="https://linkedin.com/in/keremergur/"
-  	  	  	target="_blank">LinkedIn</a>
+  	  	  	target="_blank" style="color: white">LinkedIn</a>
   	  	</li>
   	  </ul>
   	</section>
   	<section id="skills">
-  	  <LogoSet title="Languages" :logos="links" />
+  	  <LogoSet title="Languages" :logos="langs" />
   	  <LogoSet title="Tools" :logos="tools" />
   	</section>
   	<section id="interests">
   	  <h3>Some of my current interests are as follows</h3>
   	  	<div id="imgblocks">
   	  	  <Interest title="Web Development" info="Front-end, REST, CSR/SSR" />
+  	  	  <Interest title="Software Architecture" info="SOLID, Cohesion" />
   	 	  <Interest title="Database Management" info="SQL, Normalization" />
   	  	  <Interest title="Computer Networks" info="TCP/IP, DNS, VPN" />
   	  	  <Interest title="Cybersecurity" info="Cryptography, Ethical Hacking" />
@@ -86,6 +87,8 @@ const navshift = {
   	<!-- component many -->
   	</section>
   </main>
+  <footer>
+  </footer>
 </div>
 </template>
 
@@ -161,10 +164,22 @@ p {
 	padding: 0;
 	width: 10rem;
 	font-size: 1.4em;
+	display: flex; 
+	flex-direction: column; 
+	justify-content: space-evenly;
 }
+/*
+#about ul li {
+	border: 1px solid white;
+	border-radius: 10px;
+}
+*/
 #about ul li img {
-	height: 1rem;
-	width: 1rem;
+	height: 2rem; 
+	width: 2rem; 
+	float: left;
+	margin-right: 0.5rem;
+	filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 li {
 	display: block;
@@ -187,5 +202,9 @@ section {
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+}
+footer {
+	height: 10rem;
+	background-color: #161618;
 }
 </style>
