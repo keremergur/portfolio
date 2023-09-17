@@ -22,7 +22,7 @@ div {
 img {
 	height: 10rem;
 	width: 10rem;
-	filter: opacity(75%);
+	filter: opacity(75%) drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 h2 {
 	margin: 0 auto;

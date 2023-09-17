@@ -11,12 +11,13 @@ const langs = ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-ori
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"];
 const tools = [
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-	"github.svg",
+	"/github.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+	"/vite.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
@@ -58,7 +59,7 @@ const navshift = {
   	  <p>{{ introduction }}</p>
   	  <ul>
   	    <li>
-    	  <img src="github.svg" />
+    	  <img src="/github.svg" />
      	  <a href="https://github.com/keremergur/"
      	  	target="_blank" style="color: white">GitHub</a>
      	</li>
@@ -76,11 +77,11 @@ const navshift = {
   	<section id="interests">
   	  <h3>Some of my current interests are as follows</h3>
   	  	<div id="imgblocks">
-  	  	  <Interest imgsrc="web.svg" title="Web Development" info="Front-end, REST, CSR/SSR" />
-  	  	  <Interest imgsrc="arch.svg" title="Software Architecture" info="SOLID, Cohesion" />
-  	 	  <Interest imgsrc="web.svg" title="Database Management" info="SQL, Normalization" />
-  	  	  <Interest imgsrc="wire.svg" title="Computer Networks" info="TCP/IP, DNS, VPN" />
-  	  	  <Interest imgsrc="touch.svg" title="Cybersecurity" info="Cryptography, Ethical Hacking" />
+  	  	  <Interest imgsrc="/web.svg" title="Web Development" info="Front-end, REST, CSR/SSR" />
+  	  	  <Interest imgsrc="https://img.icons8.com/nolan/256/1A6DFF/C822FF/module.png" title="Software Architecture" info="SOLID, Cohesion" />
+  	 	  <Interest imgsrc="https://img.icons8.com/nolan/256/1A6DFF/C822FF/numbered-list.png" title="Database Management" info="SQL, Normalization" />
+  	  	  <Interest imgsrc="https://img.icons8.com/nolan/256/1A6DFF/C822FF/share-2.png" title="Computer Networks" info="TCP/IP, DNS, VPN" />
+  	  	  <Interest imgsrc="https://img.icons8.com/nolan/256/1A6DFF/C822FF/unlock.png" title="Cybersecurity" info="Cryptography, Ethical Hacking" />
   	  	</div>
   	</section>
   	<section id="projects">
@@ -141,6 +142,7 @@ h4 {
 #ppic {
 	height: 22rem;
 	border-radius: 30px;
+	filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 main {
 	position: relative;
