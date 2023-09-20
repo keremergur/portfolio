@@ -18,6 +18,7 @@ const tools = [
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
 	"/vite.svg",
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
@@ -170,12 +171,6 @@ p {
 	flex-direction: column; 
 	justify-content: space-evenly;
 }
-/*
-#about ul li {
-	border: 1px solid white;
-	border-radius: 10px;
-}
-*/
 #about ul li img {
 	height: 2rem; 
 	width: 2rem; 
