@@ -20,10 +20,10 @@ const tools = [
 	"/vite.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg",
-	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg"
 ];
 const navstyle = {
 	position: "sticky",
