@@ -39,7 +39,7 @@ const navshift = {
 <template>
 <div id="container">
   <header>
-  	<img id="bghead" src="./bk-prism.svg" />
+  	<img id="bghead" src="/bk-prism.svg" />
   	<div id="intro">
 	    <div class="greet">
 	      <h4>Hey there, I'm</h4>
@@ -47,12 +47,12 @@ const navshift = {
 	      <h4>a student developer at LMU Munich.</h4>
 	    </div>
 	    <div>
-	      <img id="ppic" src="./ppic.jpg" alt="[Picture]" />
+	      <img id="ppic" src="/ppic.jpg" alt="[Picture]" />
 	    </div>
 	</div>
   </header>
   <main>
-  	<img id="bgmain" src="./liquid.svg" />
+  	<img id="bgmain" src="/liquid.svg" />
   	<div :style="navstyle">
   	  <Navbar :style="navshift" />
   	</div>
