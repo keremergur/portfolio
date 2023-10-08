@@ -25,14 +25,9 @@ const tools = [
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg"
 ];
-const navstyle = {
-	position: "sticky",
-	top: "3rem",
-	'z-index': 2
-};
 const navshift = {
 	position: 'relative',
-	top: '-1rem'
+	bottom: '1.3rem'
 };
 </script>
 
@@ -50,12 +45,12 @@ const navshift = {
 	      <img id="ppic" src="/ppic.jpg" alt="[Picture]" />
 	    </div>
 	</div>
+	<div style="height: 0">
+  	  <Navbar :style="navshift" />
+  	</div>
   </header>
   <main>
   	<img id="bgmain" src="/liquid.svg" />
-  	<div :style="navstyle">
-  	  <Navbar :style="navshift" />
-  	</div>
   	<section id="about">
   	  <p>{{ introduction }}</p>
   	  <ul>
@@ -101,7 +96,7 @@ const navshift = {
 header {
 	/*background-image: url("./prism.svg");*/
 	position: sticky;
-	top: -37rem;
+	top: -35rem;
 	box-shadow: 0 3px 10px rgb(0 0 0 / 1);
 	background-color: #111;
 	opacity: 100%;
