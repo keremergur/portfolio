@@ -2,6 +2,7 @@
 import Navbar from './components/Navbar.vue';
 import LogoSet from './components/LogoSet.vue';
 import Interest from './components/Interest.vue';
+import Vlink from './components/Link.vue';
 const introduction = "Munich based student developer at Ludwig-Maximilians-University. Recently, I've mostly used JavaScript, Yarn and Vue.js, always accompanied by Git and sometimes Firebase. You can find my individual skills and interests below.";
 const langs = ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
 	"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
@@ -54,16 +55,8 @@ const navshift = {
   	<section id="about">
   	  <p>{{ introduction }}</p>
   	  <ul>
-  	    <li>
-    	  <img src="/github.svg" />
-     	  <a href="https://github.com/keremergur/"
-     	  	target="_blank" style="color: white">GitHub</a>
-     	</li>
-  	  	<li>
-  	  	  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
-  	  	  <a href="https://linkedin.com/in/keremergur/"
-  	  	  	target="_blank" style="color: white">LinkedIn</a>
-  	  	</li>
+		<vlink link="https://github.com/keremergur/" imgsrc="/github.svg">GitHub</vlink>
+		<vlink link="https://linkedin.com/in/keremergur/" imgsrc="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">LinkedIn</vlink>
   	  </ul>
   	</section>
   	<section id="skills">
