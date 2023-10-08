@@ -4,7 +4,7 @@ import LogoSet from './components/LogoSet.vue';
 import Interest from './components/Interest.vue';
 import Vlink from './components/Link.vue';
 
-import {introduction,languages,tools} from './assets';
+import {introduction,links,languages,tools,interests} from './assets';
 
 const navshift = {
 	position: 'relative',
@@ -35,8 +35,9 @@ const navshift = {
   	<section id="about">
   	  <p>{{ introduction }}</p>
   	  <ul>
-		<vlink link="https://github.com/keremergur/" imgsrc="/github.svg">GitHub</vlink>
-		<vlink link="https://linkedin.com/in/keremergur/" imgsrc="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">LinkedIn</vlink>
+		<vlink v-for="link in links" :link="link.link" :imgsrc="link.imgsrc" >
+			{{ link.title }}
+		</vlink>
   	  </ul>
   	</section>
   	<section id="skills">
@@ -46,11 +47,8 @@ const navshift = {
   	<section id="interests">
   	  <h3>Some of my current interests are as follows</h3>
   	  	<div id="imgblocks">
-  	  	  <Interest imgsrc="/web.svg" title="Web Development" info="Front-end, REST, CSR/SSR" />
-  	  	  <Interest imgsrc="https://img.icons8.com/nolan/256/1A6DFF/C822FF/module.png" title="Software Architecture" info="SOLID, Cohesion" />
-  	 	  <Interest imgsrc="https://img.icons8.com/nolan/256/1A6DFF/C822FF/numbered-list.png" title="Database Management" info="SQL, Normalization" />
-  	  	  <Interest imgsrc="https://img.icons8.com/nolan/256/1A6DFF/C822FF/share-2.png" title="Computer Networks" info="TCP/IP, DNS, VPN" />
-  	  	  <Interest imgsrc="https://img.icons8.com/nolan/256/1A6DFF/C822FF/unlock.png" title="Cybersecurity" info="Cryptography, Ethical Hacking" />
+  	  	  <Interest v-for="i in interests"
+		  	:imgsrc="i.imgsrc" :title="i.title" :info="i.info" />
   	  	</div>
   	</section>
   	<section id="projects">
@@ -138,13 +136,6 @@ p {
 	display: flex; 
 	flex-direction: column; 
 	justify-content: space-evenly;
-}
-#about ul li img {
-	height: 2rem; 
-	width: 2rem; 
-	float: left;
-	margin-right: 0.5rem;
-	filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 li {
 	display: block;
